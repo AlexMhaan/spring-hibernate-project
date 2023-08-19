@@ -40,7 +40,7 @@ public class SpringHibernateProjectApplication {
 
 		user1.setBillingInfo(info1);
 		user2.setBillingInfo(info2);
-		
+
 		userRepo.save(user1);
 		userRepo.save(user2);
 
@@ -50,10 +50,6 @@ public class SpringHibernateProjectApplication {
 		taskRepo.save(task4);
 		taskRepo.save(task5);
 		taskRepo.save(task6);
-
-
-
-
 
 	}
 

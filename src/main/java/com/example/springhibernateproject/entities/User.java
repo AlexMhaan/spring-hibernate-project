@@ -1,6 +1,8 @@
 package com.example.springhibernateproject.entities;
 
 import com.example.springhibernateproject.BillingInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -31,14 +33,14 @@ public class User implements Serializable {
     @Column(name = "is_active")
     private Boolean isActive;
 
+    @JsonIgnoreProperties("user")
     @OneToOne
     @JoinColumn(name="billing_info_id", unique=true)
     private BillingInfo billingInfo;
 
+    @JsonIgnoreProperties("user")
     @OneToMany(mappedBy = "user")
     private List<Task> task = new ArrayList<>();
-
-
 
     public User() {}
 
