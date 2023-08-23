@@ -1,5 +1,6 @@
 package com.example.springhibernateproject;
 
+import com.example.springhibernateproject.entities.BillingInfo;
 import com.example.springhibernateproject.entities.Task;
 import com.example.springhibernateproject.entities.User;
 import com.example.springhibernateproject.repositories.BillingRepository;
@@ -25,7 +26,7 @@ public class SpringHibernateProjectApplication {
 		User user1 = new User(null, "testName1", "testLastName1", "337089991", LocalDate.now(), true);
 		User user2 = new User(null, "testName2", "testLastName2", "337089992", LocalDate.now(), false);
 
-		BillingInfo info1 = new BillingInfo(null,"De la Rosa1", "19141", "Bs.As", "Argen", "AR35BSIT20741",null);
+		BillingInfo info1 = new BillingInfo(null, "De la Rosa1", "19141", "Bs.As", "Argen", "AR35BSIT20741", null);
 		BillingInfo info2 = new BillingInfo(null,"De la Rosa2", "19142", "Bs.As", "Argen", "AR35BSIT20742",null);
 
 		Task task1 = new Task(null,"Test task1", "test description from test object and fake info xD lalala", true, LocalDate.now(),user1);

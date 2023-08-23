@@ -1,7 +1,5 @@
 package com.example.springhibernateproject.entities;
 
-import com.example.springhibernateproject.BillingInfo;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 

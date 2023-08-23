@@ -1,4 +1,4 @@
-package com.example.springhibernateproject;
+package com.example.springhibernateproject.entities;
 
 import com.example.springhibernateproject.entities.User;
 import jakarta.persistence.*;
